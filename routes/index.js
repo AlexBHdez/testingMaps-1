@@ -8,6 +8,10 @@ router.get('/', function(req, res) {
 	res.render('index', { title: 'Express' });
 });
 
+router.get('/user', (req, res, next) => {
+	res.render('user');
+});
+
 router.post('/', (req, res, next) => {
 	let restaurant = new Restaurant();
 	

@@ -33,7 +33,6 @@ router.post('/', (req, res) => {
 		});
 });
 
-
 router.get('/search', (req, res) => {
 	var latitude = req.query.lat;
 	var longitude = req.query.lng;
